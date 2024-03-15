@@ -1,0 +1,175 @@
+----------Imagen Encabezado html----------
+ <link rel="icon" type="image/x-icon" href="./images/logo.png">
+
+----------Para crear una tabla----------
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+<h2>Tabla</h2>
+
+  <table style="width:100%">
+    <tr>
+      <th></th>
+      </tr>
+
+----------Otra pagina----------
+ <form action="" method="GET">
+
+-----------Boton----------
+<label for="">nombre:</label>
+<input type="" id="" name="" value="" required>
+<select id="" name="">
+    <option value="">algo</option>
+
+<a href="./index2.html"><button class="Boton">Ingresar
+</button></a>
+
+----------pie de pagina----------
+footer
+
+----------para texto y link----------
+<p></p>
+<a></a>
+
+----------
+<nav>
+    <ul>
+        <a href="#">algo</a>
+<article class="algo">
+
+----------para animacion----------
+ animation-name:simple;
+    animation-duration:20s;
+    animation-delay:8s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-name: nube;
+    z-index: 2;
+
+@keyframes nube{
+    0%{
+        opacity: 100%;
+        right: 0;
+    }
+    50%{
+        opacity: 100%;
+        right:800px;
+    }
+    100%{
+        opacity: 100%;
+        right: 2000px;
+    }
+}
+
+
+
+
+
+CSS
+
+@font-face{
+    font-family: 'myriad pro light';
+    src: url(../fuentes/Myriad\ Pro\ Light.otf);
+}
+
+@font-face{
+    font-family: 'myriad pro regular';
+    src: url(../fuentes/Myriad\ Pro\ Regular.ttf);
+    font-weight: bold;
+}
+
+
+body{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(./Imagenes/Fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+}
+.Logo{
+    position: absolute;
+    top: 23vi;
+    left: 45vi;
+    animation: logo 3s;
+    opacity: 0;
+}
+
+
+@media only screen 
+and (device-width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) { }
+
+
+
+
+.boton{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    left: -5vi;
+    top: 50vi;
+    width: 10.15vi;
+    height: 2.39vi;
+    font-family: 'myriad pro light';
+    background-color: #fc6d2d;
+    color: white;
+    text-decoration: none;
+    border: none;   
+    border-radius: 10px;
+    cursor: pointer;
+    line-height: 2.39vi;
+    font-size: 1.5em;
+}
+/*1*/
+@property --progress-value {
+    syntax: '<integer>';
+    inherits: false;
+    initial-value: 0;
+  }
+
+  @keyframes primer-progress {
+    to { --progress-value: 31;}
+  }
+
+  .progress-bar {
+    width: 3vi;
+    height: 3vi;
+    margin-left: -2vi;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) '%';
+  }
+
+  .primero {
+    background: 
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(rgb(241, 37, 37) calc(var(--progress-value) * 1%), rgb(255, 255, 255) 0);
+        animation: primer-progress 2s 1 forwards;
+        font-family: 'Myriad pro, regular';
+        font-size: 0.8vi;
+        position: absolute;
+        top: 18.5vi;
+        left: 85.5vi;
+    }
+
+    .primero::before {
+        animation: primer-progress 2s 1 forwards;
+    }
+
+    progress {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
